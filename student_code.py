@@ -234,8 +234,8 @@ while not game_over:
 		#col = pick_best_move(board, AI_PIECE)
 
 		# Switch your statements here
-		col, minimax_score = minimaxAlphaBeta(board, 5, -math.inf, math.inf, True)
-		# col, minimax_score = minimax(board, 5, True)
+		col, minimax_score = minimax(board, 5, True)
+		# col, minimax_score = minimaxAlphaBeta(board, 5, -math.inf, math.inf, True)
 
 		if is_valid_location(board, col):
 			#pygame.time.wait(500)

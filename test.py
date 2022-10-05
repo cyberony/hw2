@@ -5,14 +5,9 @@ for i in range(1,6):
 	print(i)
 	studentAns.append(main(i))
 
-# Open a file and use dump()
-with open('minmaxAlphaBeta.pkl', 'wb') as file:
-      
-    # A new file will be created
-    pickle.dump(studentAns, file)
-
 # Open the file in binary mode
-with open('minmaxAlphaBeta.pkl', 'rb') as file:
+with open('minmax.pkl', 'rb') as file:
+# with open('minmaxAlphaBeta.pkl', 'rb') as file:
       
     # Call load method to deserialze
     actualAns = pickle.load(file)
